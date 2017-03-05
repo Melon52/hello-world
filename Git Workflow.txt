@@ -1,0 +1,17 @@
+1. Create branch in github.com repository.
+2. Open bash.
+3. From ~\Documents\Github, clone github repository with "git clone [clipboard contents]".  This will create a directory for your local repo, download the files into it, and initialize it (same as git -init).  Leaves you at master.
+4.  Use git branch -a to verify which branches exist.  The list should include the branch you created in step 1.
+5. "git checkout [your github.com branch]".  This will change you from master to your branch.
+6.  Do your work.  For example, update the readme file.
+7.  Use git add . to add your changed files to the index, ready to be committed.  The bash header should change from red to green.  (The . means everything in this directory.  And you always wondered from your DOS days why this even existed.)
+8. Commit your changed files with git commit, and enter the commit message with Notepad, or use git commit -m "message" to add the commit message immediately.
+9. Send your commit to the github.com branch with "git push origin [your github.com branch]".  You can also git push origin master, but then it will go directly into master, without the comparison opportunity in step 10.
+10. Go to your repo on github.com.  Your branch should identify that it is ahead of master, and there should be a "Compare & pull request" button.  Click it.
+11. You will either be able to merge, or there will be conflicts requiring resolution.  Assuming "able to merge," add a merge comment and click "Create pull request."
+12. The pull request will be created.  Navigate to it, and click the button, "Merge pull request."  Confirm merge.  
+13.  After the pull request is successful, delete the github branch, which is no longer needed.  (Github will ask you.)
+14.  Local repo can be deleted, or you can continue to update it with "git pull origin".
+
+
+
