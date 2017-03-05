@@ -1,0 +1,13 @@
+Merge workflow for pull requests in another repo.
+
+1.  Clone your repo from github locally using git clone [url] and cd into it.
+2.  Add the other person's fork as a remote repo using:  git remote add [convenient nickname] [URL from their github repo].
+Example:  git remote add tisto https://github.com/tisto/angular-bootstrap-nav-tree.git
+3.  Get the data from that remote repo using:  git fetch [convenient nickname]
+Example:  git fetch tisto
+4.   Assuming the remote repo exists in its own "master" branch, merge that data into the local master using:  git merge [nickname]/master
+5.   Commit the merged changes into the local master using:  git commit -m "Explanatory message for the commit's contents."
+6.  Push the changes to your github repo.  There are two options.  
+First option:  git push origin master.  Warning:  this puts the change directly into "master"on github, not into a branch.  So, there's no pull request on github after this.
+Second option:  git push origin [localbranch]:[remotebranch].  In this scenario, you could use git push origin master:tistobranchonmelon.  Git will create tistobranchonmelon, if it doesn't already exist.  Now, you can compare and make a pull request before you merge.
+7.  Delete the other person's fork by deleting the local clone's directory.  That lets you start clean with the next one.
