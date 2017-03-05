@@ -11,7 +11,7 @@
 11. You will either be able to merge, or there will be conflicts requiring resolution.  Assuming "able to merge," add a merge comment and click "Create pull request."
 12. The pull request will be created.  Navigate to it, and click the button, "Merge pull request."  Confirm merge.  
 13.  After the pull request is successful, delete the github branch, which is no longer needed.  (Github will ask you.)
-14.  Local repo can be deleted, or you can continue to update it with "git pull origin".
+14.  Local repo can be deleted, or you can continue to update it with "git pull origin".  Alternatively, you can use fetch and merge.
 
 
 
