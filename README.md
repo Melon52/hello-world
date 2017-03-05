@@ -2,5 +2,5 @@
 Pretty much says it all.
 Editing the readme.
 Trying an edit from the local repository.
-Another edit.
+Now we're going to practice merge conflicts and changing remotes.
 
